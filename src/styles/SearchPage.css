@@ -1,0 +1,9 @@
+.search-container{width: 100%;text-align: center; padding: 5rem 0;background-color: black;}
+.movie{display: inline-block;padding-right: 0.5rem; padding-bottom: 7rem;}
+.movie__column-poster{cursor: pointer;transition: transform 0.3s ease 0s;}
+.movie__column-poster:hover{transform: scale(1.25);}
+.movie__poster{width: 90%;border-radius: 5px;}
+.movie__name{width: 90%; color: #fff;text-align: left;padding: 1rem 0 0 1rem;font-weight: 800;font-size: 1.5rem;}
+
+.no-results{display: flex;justify-content: center;align-items: center;height: 100%;padding: 8rem; color: #c5c5c5;}
+
