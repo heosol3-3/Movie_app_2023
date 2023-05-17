@@ -1,21 +1,17 @@
 import React, { useEffect, useState } from 'react'
 
-// 일정 시간 동안 기다려 주는 함수를 만들어 주는 것
-
 function useDebounce(value, delay) {
-
   const [debounceValue, setDebounceValue] = useState(value);
 
-  useEffect(() => {
+  useEffect(() =>{
     const handler = setTimeout(() => {
       setDebounceValue(value);
     }, delay);
     
-    return () => {
+    return(() => {
       clearTimeout(handler);
-    }
-  },[value,delay]);
-
+    }) 
+  },[value, delay]);
   return debounceValue;
 }
 
